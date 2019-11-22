@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>Question 2</head>
+<body>
+<h3>Question 2</h3>
+<p>As you have cracked earlier system, Jenny found a new way to store his password.</p>
+<p>Are you smart enough too crack jenny's system again to prove iron man wrong this week too?</p>
+<!-- what will I get in return if I give your flag? HeHe:) Just kidding.-->
+<form method="post" id="f">
+<table>
+<tr>
+<td>Username:</td>
+<td><input type="text" id="un"></td>
+<tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" id="pw"></td>
+</tr>
+<tr>
+<td><input type="submit" value="Login" onclick="validate()"></td>
+</tr>
+</table>
+</form>
+<script>
+var flg=0;
+function validate(){
+u=document.getElementById("un");
+p=document.getElementById("pw");
+if(u=="" || p==""){
+alert("Fill in all the details");
+flg=1;
+}
+else{
+alert("Details are not valid, Check Again!!!");
+flg=1;
+}
+if(flg==0)
+document.getElementById("f").setAttribute("action","password.html");
+}
+</script>
+</body>
+</html>
